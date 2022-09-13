@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
     <title>Random Addict</title>
     <style>
@@ -67,7 +67,10 @@
                     <a href="#pricing" class="btn btn-success btn-lg">Do it now</a>
                 </div>
                 <div class="col-md-5 text-center d-none d-md-block">
-                    <img class="img-fluid" src="assets/h6unhgup.bmp" alt="random image">
+                    <!-- Tooltip -->
+                    <span data-bs-toggle="tooltip" data-bs-placement="right" title="A random Image">
+                        <img class="img-fluid" src="assets/h6unhgup.bmp" alt="random image"></span>
+
                 </div>
             </div>
         </div>
@@ -194,7 +197,7 @@
     <section id="reviews" class="bg-light">
         <div class="container-lg">
             <div class="text-center">
-                
+
                 <h2><i class="bi bi-hypnotize"></i> The Reviews</h2>
                 <p class="lead">What the others say about this!</p>
             </div>
@@ -235,16 +238,29 @@
                         <label for="email" class="form-label">Email Address</label>
                         <div class="input-group mb-3">
                             <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
-                            <input type="email" id="email" class="form-control" placeholder="e.g.asdf@gmail.com" aria-describedby="emailHelp">
+                            <input type="email" id="email" class="form-control" placeholder="e.g.asdf@gmail.com"
+                                aria-describedby="emailHelp">
+                            <!-- tooltip -->
+                            <span class="input-group-text">
+                                <span data-bs-toggle="tooltip" data-bs-placement="right" title="Don't worry about it bro">
+                                    <i class="bi bi-question-square"></i></span>
+
                         </div>
-                        
+
                         <label for="name" class="form-label">Your name</label>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="nameHelp"><i class="bi bi-person-fill"></i></span>
-                            <input type="text" id="name" class="form-control" placeholder="Just put your favorite character" aria-describedby="nameHelp">
+                            <input type="text" id="name" class="form-control"
+                                placeholder="Just put your favorite character" aria-describedby="nameHelp">
+                                <!-- tooltip -->
+                            <span class="input-group-text">
+                                <span data-bs-toggle="tooltip" data-bs-placement="right" title="Just like them">
+                                    <i class="bi bi-question-square"></i></span>
+
                         </div>
-                          <label for="talk" class="form-label">What do you Wanna ask</label>
-                          <div class="input-group mb-3">
+                        
+                        <label for="talk" class="form-label">What do you Wanna ask</label>
+                        <div class="input-group mb-3">
                             <span class="input-group-text" id="nameHelp"><i class="bi bi-chat-left-dots"></i></span>
                             <select class="form-select" id="talk">
                                 <option selected>Games</option>
@@ -252,20 +268,21 @@
                                 <option value="2">Cartoons and Anime</option>
                                 <option value="3">Crazy shit!</option>
                                 <option value="4">Other</option>
-                              </select>
+                            </select>
                         </div>
-                          
+                    
 
                         <div class="form-floating mb-4 mt-3">
                             <textarea class="form-control" id="question" style="height: 100px"></textarea>
                             <label for="question">Write about it here</label>
                         </div>
-                        
+
                         <div class="mb-4 text-center">
-                            <button type="submit"class="btn btn-secondary">Submit it!</button>
+                            <button type="submit" class="btn btn-secondary">Submit it!</button>
                         </div>
-                        
-                     
+                </div>
+
+
 
 
                     </form>
@@ -277,6 +294,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+    </script>
 </body>
 
 </html>
