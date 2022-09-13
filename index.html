@@ -242,7 +242,8 @@
                                 aria-describedby="emailHelp">
                             <!-- tooltip -->
                             <span class="input-group-text">
-                                <span data-bs-toggle="tooltip" data-bs-placement="right" title="Don't worry about it bro">
+                                <span data-bs-toggle="tooltip" data-bs-placement="right"
+                                    title="Don't worry about it bro">
                                     <i class="bi bi-question-square"></i></span>
 
                         </div>
@@ -252,13 +253,13 @@
                             <span class="input-group-text" id="nameHelp"><i class="bi bi-person-fill"></i></span>
                             <input type="text" id="name" class="form-control"
                                 placeholder="Just put your favorite character" aria-describedby="nameHelp">
-                                <!-- tooltip -->
+                            <!-- tooltip -->
                             <span class="input-group-text">
                                 <span data-bs-toggle="tooltip" data-bs-placement="right" title="Just like them">
                                     <i class="bi bi-question-square"></i></span>
 
                         </div>
-                        
+
                         <label for="talk" class="form-label">What do you Wanna ask</label>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="nameHelp"><i class="bi bi-chat-left-dots"></i></span>
@@ -270,7 +271,7 @@
                                 <option value="4">Other</option>
                             </select>
                         </div>
-                    
+
 
                         <div class="form-floating mb-4 mt-3">
                             <textarea class="form-control" id="question" style="height: 100px"></textarea>
@@ -285,12 +286,53 @@
 
 
 
-                    </form>
-                </div>
+                </form>
             </div>
+        </div>
         </div>
     </section>
 
+    <!-- The Modal Trigger -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="text-center">
+                <h2>Stay in Touch</h2>
+                <p class="lead">Get the latest info about crazy things ...</p>
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-center">
+                        <p class="text-muted my-3">
+                            Bunch of Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat ratione assumenda
+                            illo laborum eaque voluptatum eligendi sit sequi odit ducimus velit illum, ut eum nostrum.
+                            Similique voluptates eius quaerat voluptas!
+                        </p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#jModal">
+                            Join now!
+                          </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- The Modal Itself -->
+    <div class="modal fade" id="jModal" tabindex="-1" aria-labelledby="jModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="jModalLabel">Join now!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="text-muted">Just Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ullam quo magnam a voluptatibus debitis, dolorum repudiandae dolore quasi?</p>
+              <label for="email-modal" class="form-label">Email Address:</label>
+              <input type="email" class="form-control" id="email-modal" placeholder="Your email bro">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Submit!</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
