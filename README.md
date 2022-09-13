@@ -1,6 +1,6 @@
 # Project_Bootstrap
-testing the bootstrap 5 on a website
+Testando o Framework
 
-desenvovimento de uma pagina inicial usando o bootstrap e com o auxilio de sass
+#Desenvovimento de uma pagina inicial usando o bootstrap e com o auxilio de sass
 
-para verifcar o conteudo final, verifique o branch 12,13 e 14
+##Para verifcar o conteudo final, verifique o branch 12,13 e 14
