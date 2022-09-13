@@ -1,0 +1,22 @@
+{
+  "name": "project_bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gui37/Project_Bootstrap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gui37/Project_Bootstrap/issues"
+  },
+  "homepage": "https://github.com/Gui37/Project_Bootstrap#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.1"
+  }
+}
